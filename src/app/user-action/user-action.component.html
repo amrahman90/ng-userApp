@@ -1,0 +1,29 @@
+<div class="heading">
+    {{action}}
+</div>
+
+<div class="form-container">
+    <form [formGroup]="form">
+        <div>
+            <mat-form-field>
+                <input formControlName="first_name" matInput placeholder="First Name">
+            </mat-form-field>
+        </div>
+    
+        <div>
+            <mat-form-field>
+                <input formControlName="last_name" matInput placeholder="Last Name">
+            </mat-form-field>
+        </div>
+
+        <div>
+            <mat-form-field>
+                <input formControlName="email" matInput placeholder="Email">
+            </mat-form-field>
+        </div>
+    
+        <div>
+            <button mat-raised-button color="primary" (click)="onClick()">{{actionButton}}</button>
+        </div>
+    </form>
+</div>

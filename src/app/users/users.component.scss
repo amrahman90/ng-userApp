@@ -1,0 +1,63 @@
+:host {
+    position: relative;
+    top: 75px;
+    left: 20px;
+}
+
+.users-heading {
+    span {
+        font-size: 20px;
+    }
+
+    button {
+        float: right;
+        margin-right: 30px;
+    }
+}
+
+.users-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-left: 75px;
+}
+
+.card-container {
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    border: 1px solid lightgray;
+}
+
+mat-card-content {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+
+    .mat-card-avatar {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .user-info {
+        margin-left: 20px;
+        margin-top: 10px;
+
+        .user-name {
+            font-weight: 500;
+        }
+
+        .user-email {
+            color: gray;
+        }
+    }
+}
+
+mat-card-footer {
+    margin-left: 30%;
+
+    .mat-icon {
+        color: gray;
+        padding: 5px;
+        cursor: pointer;
+    }
+}

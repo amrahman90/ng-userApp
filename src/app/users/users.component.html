@@ -1,0 +1,23 @@
+<div class="users-heading">
+    <span>Users</span>
+    <button mat-raised-button color="primary" (click)="createUser()">Create User</button>
+</div>
+
+<div class="users-list">
+    <mat-card class="card-container" *ngFor="let user of users">
+        <mat-card-content>
+            <div>
+                <img mat-card-avatar src="{{user.avatar}}">
+            </div>
+            <div class="user-info">
+                <div class="user-name">{{user.first_name}} {{user.last_name}}</div>
+                <div class="user-email">{{user.email}}</div>
+            </div>
+        </mat-card-content>
+        <mat-card-footer>
+            <mat-icon (click)="editUser(user.id)">edit</mat-icon>
+            <mat-icon (click)="viewUser(user.id)">credit_card</mat-icon>
+            <mat-icon (click)="deleteUser(user.id)">delete</mat-icon>
+        </mat-card-footer>
+    </mat-card>
+</div>
